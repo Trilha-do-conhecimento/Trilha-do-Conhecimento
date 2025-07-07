@@ -46,6 +46,16 @@
                 -1px  1px 0 #000,
                  1px  1px 0 #000;
         }
+
+        /* Animação de fade-in para o pop-up */
+        .popup-fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
     </style>
 </head>
 
@@ -88,50 +98,116 @@
             
             <!-- Botão de Localização -->
             <a href="https://goo.gl/maps/y74byUKDqFeXs5Bd8?g_st=aw" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full bg-blue-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-600 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
                 Localização
             </a>
 
             <!-- Botão do Instagram -->
             <a href="https://www.instagram.com/trilha_conhecimento?igsh=dnY1ejduZ3Z6Y2Vq" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 Instagram
             </a>
             
             <!-- Botão do WhatsApp -->
             <a href="https://wa.me/5522974028446" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full bg-green-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-green-600 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.456l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.451-4.437-9.887-9.888-9.888-5.451 0-9.887 4.436-9.888 9.888 0 2.044.594 3.996 1.677 5.662l-1.075 3.926 3.995-1.045z"/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.456l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.451-4.437-9.887-9.888-9.888-5.451 0-9.887 4.436-9.888 9.888 0 2.044.594 3.996 1.677 5.662l-1.075 3.926 3.995-1.045z"/></svg>
                 WhatsApp
             </a>
 
-            <!-- Botão Adivinhando Bandeiras -->
-            <a href="https://danipaises.github.io/quizdasmaneirasdospaises/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full bg-purple-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-purple-600 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M2 3a1 1 0 011-1h1.757a1 1 0 01.707.293l3.414 3.414a1 1 0 010 1.414l-3.414 3.414A1 1 0 014.757 11H3a1 1 0 01-1-1V3z"></path>
-                    <path d="M5 4.5a.5.5 0 00-.5.5v4a.5.5 0 00.5.5H6a.5.5 0 00.5-.5v-4A.5.5 0 006 4.5H5zM17 3a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1h13z"></path>
+            <!-- NOVO: Botão para abrir o Portal de Jogos -->
+            <button id="openGamePortal" class="group flex items-center justify-center w-full bg-indigo-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-indigo-600 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                 </svg>
-                Adivinhando Bandeiras
-            </a>
-            
-            <!-- Botão Portal de Jogos Autista TDAH -->
-            <a href="https://danipaises.github.io/portal-para-os-jogos-de-autista-e-TDAH/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full bg-orange-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-orange-600 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
-                </svg>
-                Portal de Jogos Autista TDAH
-            </a>
-            
+                Portal de Jogos
+            </button>
         </div>
-
     </div>
+
+    <!-- INÍCIO: Pop-up do Portal de Jogos -->
+    <div id="gamePortalPopup" class="hidden fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+        <!-- Conteúdo do Pop-up -->
+        <div class="bg-white w-full max-w-lg mx-auto rounded-2xl shadow-2xl p-6 relative popup-fade-in">
+            <!-- Botão de Fechar -->
+            <button id="closeGamePortal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
+
+            <!-- Cabeçalho -->
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Portal de Jogos Educativos</h2>
+                <p class="text-gray-500 mt-1">Selecione um jogo para começar</p>
+            </div>
+
+            <!-- Grade de Jogos -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+                <!-- Jogo 1: Ícone de Emoji de Globo -->
+                <a href="https://danipaises.github.io/quizdasmaneirasdospaises/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-purple-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">
+                        🌎
+                    </div>
+                    <span class="font-semibold text-gray-700 text-sm">Adivinhe a Bandeira</span>
+                </a>
+                <!-- Jogo 2: Nome alterado -->
+                <a href="https://danipaises.github.io/portal-para-os-jogos-de-autista-e-TDAH/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-orange-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-orange-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                    </div>
+                    <span class="font-semibold text-gray-700 text-sm">TDAH e Autismo</span>
+                </a>
+                <!-- Jogo 3: Ícone de Emoji da Bandeira do Brasil -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-cyan-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">
+                        🇧🇷
+                    </div>
+                    <span class="font-semibold text-gray-700 text-sm">Quiz Regiões do Brasil</span>
+                </a>
+                <!-- Jogo 4: Caça Palavras -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-teal-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-teal-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <span class="font-semibold text-gray-700 text-sm">Caça Palavras</span>
+                </a>
+                <!-- Jogo 5: Pensa Rápido -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-amber-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-amber-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    </div>
+                    <span class="font-semibold text-gray-700 text-sm">Pensa Rápido (Matemática)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FIM: Pop-up do Portal de Jogos -->
+
+    <!-- Script para controlar o Pop-up -->
+    <script>
+        // Seleciona os elementos do DOM
+        const openButton = document.getElementById('openGamePortal');
+        const closeButton = document.getElementById('closeGamePortal');
+        const gamePortalPopup = document.getElementById('gamePortalPopup');
+
+        // Função para abrir o pop-up
+        openButton.addEventListener('click', () => {
+            gamePortalPopup.classList.remove('hidden');
+        });
+
+        // Função para fechar o pop-up
+        closeButton.addEventListener('click', () => {
+            gamePortalPopup.classList.add('hidden');
+        });
+
+        // Opcional: Fechar o pop-up ao clicar fora da área de conteúdo
+        gamePortalPopup.addEventListener('click', (event) => {
+            // Verifica se o clique foi no fundo (o próprio pop-up) e não em seus filhos
+            if (event.target === gamePortalPopup) {
+                gamePortalPopup.classList.add('hidden');
+            }
+        });
+    </script>
 
 </body>
 </html>
