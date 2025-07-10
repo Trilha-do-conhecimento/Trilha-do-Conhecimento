@@ -114,7 +114,7 @@
                 WhatsApp
             </a>
 
-            <!-- NOVO: Botão para abrir o Portal de Jogos -->
+            <!-- Botão para abrir o Portal de Jogos -->
             <button id="openGamePortal" class="group flex items-center justify-center w-full bg-indigo-500 text-white font-semibold py-3 px-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-indigo-600 shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
@@ -127,7 +127,7 @@
     <!-- INÍCIO: Pop-up do Portal de Jogos -->
     <div id="gamePortalPopup" class="hidden fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
         <!-- Conteúdo do Pop-up -->
-        <div class="bg-white w-full max-w-lg mx-auto rounded-2xl shadow-2xl p-6 relative popup-fade-in">
+        <div class="bg-white w-full max-w-2xl mx-auto rounded-2xl shadow-2xl p-6 relative popup-fade-in max-h-[90vh] overflow-y-auto">
             <!-- Botão de Fechar -->
             <button id="closeGamePortal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -142,51 +142,75 @@
             </div>
 
             <!-- Grade de Jogos -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
-                <!-- Jogo 1: Adivinhe a Bandeira -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
+                
+                <!-- Jogo Antigo 1: Adivinhe a Bandeira -->
                 <a href="https://danipaises.github.io/quizdasmaneirasdospaises/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-purple-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">
-                        🌎
-                    </div>
+                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">🌎</div>
                     <span class="font-semibold text-gray-700 text-sm">Adivinhe a Bandeira</span>
                 </a>
-                <!-- Jogo 2: TDAH e Autismo -->
+                <!-- Jogo Antigo 2: TDAH e Autismo -->
                 <a href="https://danipaises.github.io/portal-para-os-jogos-de-autista-e-TDAH/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-orange-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="text-orange-500 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
-                    </div>
+                    <div class="text-orange-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg></div>
                     <span class="font-semibold text-gray-700 text-sm">TDAH e Autismo</span>
                 </a>
-                <!-- Jogo 3: Quiz Regiões do Brasil -->
+                <!-- Jogo Antigo 3: Quiz Regiões do Brasil -->
                 <a href="https://trilha-do-conhecimento.github.io/Quiz-das-regi-es-do-Brasil/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-cyan-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">
-                        🇧🇷
-                    </div>
+                    <div class="mb-2 text-4xl h-10 flex items-center justify-center">🇧🇷</div>
                     <span class="font-semibold text-gray-700 text-sm">Quiz Regiões do Brasil</span>
                 </a>
-                <!-- Jogo 4: Caça Palavras -->
+                <!-- Jogo Antigo 4: Caça Palavras -->
                 <a href="https://trilha-do-conhecimento.github.io/Ca-a-palavra/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-teal-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="text-teal-500 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg>
-                    </div>
+                    <div class="text-teal-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg></div>
                     <span class="font-semibold text-gray-700 text-sm">Caça Palavras</span>
                 </a>
-                <!-- Jogo 5: Pensa Rápido -->
+                <!-- Jogo Antigo 5: Pensa Rápido -->
                 <a href="https://trilha-do-conhecimento.github.io/Pense-r-pido-matem-tica/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-amber-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="text-amber-500 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                    </div>
-                    <span class="font-semibold text-gray-700 text-sm">Pensa Rápido (Matemática)</span>
+                    <div class="text-amber-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg></div>
+                    <span class="font-semibold text-gray-700 text-sm">Pensa Rápido</span>
                 </a>
-                <!-- NOVO JOGO: Adivinhe a Sigla -->
+                <!-- Jogo Antigo 6: Adivinhe a Sigla -->
                 <a href="https://trilha-do-conhecimento.github.io/Jogo-de-adivinha-o-de-siglas-geografia-/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-lime-100 hover:shadow-md transition-all transform hover:-translate-y-1">
-                    <div class="text-lime-500 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.884 5.063A9 9 0 1016.116 18.937M12 21a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                    </div>
+                    <div class="text-lime-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.884 5.063A9 9 0 1016.116 18.937M12 21a9 9 0 100-18 9 9 0 000 18z" /></svg></div>
                     <span class="font-semibold text-gray-700 text-sm">Adivinhe a Sigla</span>
                 </a>
+
+                <!-- Jogo Novo 1: Jogo da Tabuada -->
+                <a href="https://trilha-do-conhecimento.github.io/Jogo-da-tabuada-da-matem-tica/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-blue-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-blue-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg></div>
+                    <span class="font-semibold text-gray-700 text-sm">Jogo da Tabuada</span>
+                </a>
+
+                <!-- Jogo Novo 2: Jogo das Frações -->
+                <a href="https://trilha-do-conhecimento.github.io/Jogo-da-fra-o/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-amber-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-amber-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 15h2M11 9h2m-5 10h8a2 2 0 002-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+                    <span class="font-semibold text-gray-700 text-sm">Jogo das Frações</span>
+                </a>
+
+                <!-- Jogo Novo 3: Corpo Humano -->
+                <a href="https://trilha-do-conhecimento.github.io/Jogo-do-sistemas-do-corpo/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-red-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-red-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></div>
+                    <span class="font-semibold text-gray-700 text-sm">Corpo Humano</span>
+                </a>
+
+                <!-- Jogo Novo 4: Classes Gramaticais -->
+                <a href="https://trilha-do-conhecimento.github.io/Jogo-das-classes-gramaticais/" target="_blank" rel="noopener noreferrer" class="block bg-gray-100 p-4 rounded-lg hover:bg-green-100 hover:shadow-md transition-all transform hover:-translate-y-1">
+                    <div class="text-green-500 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg></div>
+                    <span class="font-semibold text-gray-700 text-sm">Classes Gramaticais</span>
+                </a>
+
+                <!-- Item 5: Em Breve (Não Clicável) -->
+                <div class="block bg-gray-100 p-4 rounded-lg opacity-50 cursor-not-allowed">
+                    <div class="text-gray-400 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <span class="font-semibold text-gray-500 text-sm">Em Breve</span>
+                </div>
+
+                <!-- Item 6: Em Breve (Não Clicável) -->
+                <div class="block bg-gray-100 p-4 rounded-lg opacity-50 cursor-not-allowed">
+                    <div class="text-gray-400 mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <span class="font-semibold text-gray-500 text-sm">Em Breve</span>
+                </div>
+
             </div>
         </div>
     </div>
@@ -221,3 +245,4 @@
 </body>
 </html>
 
+    
